@@ -149,5 +149,5 @@ telephony.lteOnCdmaDevice=1
 ro.soc.manufacturer=Qualcomm
 ro.soc.model=SM8150
 
-# WiFi Display
-persist.sys.wfd.virtual=0
+# Zygote
+zygote.critical_window.minute=10
