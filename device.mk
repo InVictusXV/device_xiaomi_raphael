@@ -230,6 +230,10 @@ LOCAL_KERNEL := device/xiaomi/raphael-kernel/Image.gz-dtb
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackagesRaphael
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
