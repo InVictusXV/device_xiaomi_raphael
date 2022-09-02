@@ -404,6 +404,7 @@ PRODUCT_PACKAGES += \
 
 # Shim
 PRODUCT_PACKAGES += \
+    libshim_libcdfw_remote_api \
     libwatermark_shim
 
 # Telephony
