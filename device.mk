@@ -86,6 +86,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     suspend.short_suspend_backoff_enabled=true \
     suspend.max_sleep_time_millis=40000
 
+# Kernel Headers
+PRODUCT_VENDOR_KERNEL_HEADERS := device/xiaomi/raphael-kernel/sm8150/kernel-headers
+
+# Kernel
+LOCAL_KERNEL := device/xiaomi/raphael-kernel/Image.gz-dtb
+PRODUCT_COPY_FILES += \
+    $(LOCAL_KERNEL):kernel
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService-Soong
