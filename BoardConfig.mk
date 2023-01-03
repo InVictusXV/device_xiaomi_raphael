@@ -37,9 +37,10 @@ BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 androidboot.hardware=qcom andro
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
-BOARD_KERNEL_SEPARATED_DTBO := true
-TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/dtc/dtc
-TARGET_KERNEL_SOURCE := kernel/xiaomi/raphael
+BOARD_PREBUILT_DTBOIMAGE := device/xiaomi/raphael-kernel/dtbo.img
+TARGET_FORCE_PREBUILT_KERNEL := true
+TARGET_KERNEL_VERSION := 4.14
+TARGET_PREBUILT_KERNEL := device/xiaomi/raphael-kernel/Image.gz-dtb
 TARGET_KERNEL_CONFIG := raphael_defconfig
 
 # Platform
