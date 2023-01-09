@@ -108,13 +108,13 @@ persist.vendor.ssr.enable_ramdumps=1
 persist.vendor.ssr.restart_level=ALL_ENABLE
 
 # SurfaceFlinger
-debug.sf.early.app.duration=20000000
-debug.sf.early.sf.duration=27600000
-debug.sf.earlyGl.app.duration=20000000
-debug.sf.earlyGl.sf.duration=27600000
+debug.sf.early.app.duration=24000000
+debug.sf.early.sf.duration=30000000
+debug.sf.earlyGl.app.duration=24000000
+debug.sf.earlyGl.sf.duration=30000000
 debug.sf.hwc.min.duration=23000000
-debug.sf.late.app.duration=20000000
-debug.sf.late.sf.duration=27600000
+debug.sf.late.app.duration=24000000
+debug.sf.late.sf.duration=30000000
 debug.sf.use_phase_offsets_as_durations=1
 
 # Vendor
