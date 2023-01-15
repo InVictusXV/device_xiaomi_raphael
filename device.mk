@@ -201,6 +201,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
 
+# Kernel Headers
+PRODUCT_VENDOR_KERNEL_HEADERS := device/xiaomi/raphael-kernel/sm8150/kernel-headers
+
+# Kernel
+LOCAL_KERNEL := device/xiaomi/raphael-kernel/Image.gz-dtb
+PRODUCT_COPY_FILES += \
+    $(LOCAL_KERNEL):kernel
+
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.1.vendor \
