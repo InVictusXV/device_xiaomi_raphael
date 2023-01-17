@@ -205,8 +205,7 @@ PRODUCT_PACKAGES += \
 
 # FM
 PRODUCT_PACKAGES += \
-    FM2 \
-    qcom.fmradio
+    RevampedFMRadio
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
