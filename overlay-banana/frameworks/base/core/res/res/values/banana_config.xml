@@ -65,4 +65,7 @@
      NOTE ! - Enable for devices that have a fast response proximity sensor (ideally < 300ms)-->
     <bool name="config_proximityCheckOnWake">true</bool>
     <bool name="config_proximityCheckOnWakeEnabledByDefault">true</bool>
+
+    <!-- Does the device have a notification led -->
+    <bool name="config_hasNotificationLed">true</bool>
 </resources>

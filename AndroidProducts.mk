@@ -5,8 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_raphael.mk
+    $(LOCAL_DIR)/banana_raphael.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_raphael-userdebug \
-    derp_raphael-eng
+    banana_raphael-userdebug \
+    banana_raphael-eng

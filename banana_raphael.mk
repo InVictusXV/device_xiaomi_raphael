@@ -12,8 +12,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from raphael device
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
-# Inherit some common Derpfess stuff.
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+# Inherit some common Banana stuff.
+$(call inherit-product, vendor/banana/config/common.mk)
+WITH_GAPPS := true
+BANANA_MAINTAINER := Aradhea
+TARGET_HAS_UDFPS := true
 
 # Derp
 DERP_BUILDTYPE := Makima
