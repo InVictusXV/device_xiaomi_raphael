@@ -1,6 +1,9 @@
 # Camera
 persist.vendor.camera.privapp.list=com.android.camera
 
+#Expose aux camera for below packages
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.xiaomi.cameratest,com.xiaomi.factory.mmi,com.xiaomi.runin
+
 # Display
 debug.sf.enable_hwc_vds=1
 debug.force_no_blanking=true

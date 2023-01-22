@@ -56,6 +56,19 @@ ro.bluetooth.a2dp_offload.supported=true
 camera.disable_zsl_mode=true
 persist.vendor.camera.perflock.enable=0
 
+#Enable NCS, TOF and HAF
+vendor.camera.enableNCSService=TRUE
+vendor.camera.enableTOFInterface=TRUE
+#system property for displayfeature hidl
+sys.displayfeature_hidl=true
+#system property for HBM mode
+vendor.hbm.enable=true
+#dualcam sat fallback setting
+persist.camera.sat.fallback.dist=40
+persist.camera.sat.fallback.dist.d=10
+persist.camera.sat.fallback.luxindex=330
+persist.camera.sat.fallback.lux.d=50
+
 # Crypto
 ro.crypto.volume.filenames_mode=aes-256-cts
 
