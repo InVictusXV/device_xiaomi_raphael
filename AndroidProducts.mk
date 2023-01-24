@@ -5,8 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_raphael.mk
+    $(LOCAL_DIR)/banana_raphael.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_raphael-userdebug \
-    evolution_raphael-eng
+    banana_raphael-userdebug \
+    banana_raphael-eng
