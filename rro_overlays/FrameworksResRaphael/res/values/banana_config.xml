@@ -91,4 +91,7 @@
        For example, a device with notification and battery lights that supports
        pulsating and RGB control would set this config to 75. -->
   <integer name="config_deviceLightCapabilities">232</integer>
+
+  <!-- Does the device have a notification led -->
+    <bool name="config_hasNotificationLed">true</bool>
 </resources>
