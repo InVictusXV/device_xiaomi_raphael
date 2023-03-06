@@ -194,6 +194,10 @@ PRODUCT_PACKAGES += \
     FM2 \
     qcom.fmradio
 
+# QTI
+TARGET_COMMON_QTI_COMPONENTS := \
+    perf
+
 # F2FS
 PRODUCT_PACKAGES += \
     sg_write_buffer \
