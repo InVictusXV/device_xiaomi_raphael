@@ -194,8 +194,9 @@ PRODUCT_PACKAGES += \
     FM2 \
     qcom.fmradio
 
-# QTI
+# QTI COMP
 TARGET_COMMON_QTI_COMPONENTS := \
+    av \
     perf
 
 # F2FS
@@ -306,7 +307,6 @@ PRODUCT_PACKAGES += \
     libOmxAmrEnc \
     libcodec2_vndk.vendor \
     libavservices_minijail \
-    libavservices_minijail.vendor \
     libavservices_minijail_vendor \
     libcodec2_hidl@1.0.vendor \
     libOmxCore \
