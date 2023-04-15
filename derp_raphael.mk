@@ -17,6 +17,7 @@ $(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
 # Derp
 DERP_BUILDTYPE := Makima
+TARGET_NOT_USES_BLUR=true
 
 # UDFPS animations
 EXTRA_UDFPS_ANIMATIONS := true
