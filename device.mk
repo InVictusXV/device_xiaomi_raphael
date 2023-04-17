@@ -156,9 +156,7 @@ PRODUCT_BOARD_PLATFORM := msmnile
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
-    android.hardware.camera.provider@2.4-service_64
-
-PRODUCT_PACKAGES += \
+    android.hardware.camera.provider@2.4-service_64 \
     libcamera2ndk_vendor \
     libdng_sdk.vendor \
     libgui_vendor \
@@ -248,6 +246,14 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-service
 
+# Kernel Headers
+PRODUCT_VENDOR_KERNEL_HEADERS := device/xiaomi/raphael-kernel/sm8150/kernel-headers
+
+# Kernel
+LOCAL_KERNEL := device/xiaomi/raphael-kernel/Image.gz-dtb
+PRODUCT_COPY_FILES += \
+    $(LOCAL_KERNEL):kernel
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
@@ -267,6 +273,10 @@ PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml \
     libipanat
+
+# IFAA manager
+PRODUCT_PACKAGES += \
+    IFAAService
 
 # IRSC
 PRODUCT_COPY_FILES += \
@@ -324,6 +334,11 @@ PRODUCT_COPY_FILES += \
 # Net
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor
+
+# Mlipay
+PRODUCT_PACKAGES += \
+    vendor.xiaomi.hardware.mlipay@1.1.vendor \
+    vendor.xiaomi.hardware.mtdservice@1.0.vendor
 
 # Neural Networks
 PRODUCT_PACKAGES += \

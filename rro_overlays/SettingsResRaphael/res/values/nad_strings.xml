@@ -5,6 +5,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- ROM maintainer name -->
-    <string name="build_maintainer_summary">Joey Huab (Stallix)</string>
-    <string name="build_maintainer_telegram">https://t.me/Stallix</string>
+    <string name="maintainer_name">Aradhea</string>
+    <string name="github_username">InVictusXV</string> 
+    <string name="telegram_username">Vrasteizz</string>
 </resources>
