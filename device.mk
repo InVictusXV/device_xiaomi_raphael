@@ -17,6 +17,14 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# Kernel Headers
+PRODUCT_VENDOR_KERNEL_HEADERS := device/xiaomi/raphael-kernel/sm8150/kernel-headers
+
+# Kernel
+LOCAL_KERNEL := device/xiaomi/raphael-kernel/Image.gz-dtb
+PRODUCT_COPY_FILES += \
+    $(LOCAL_KERNEL):kernel
+
 # Overlays
 PRODUCT_PACKAGES += \
     ApertureOverlay \

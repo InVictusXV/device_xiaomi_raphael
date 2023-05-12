@@ -12,15 +12,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from raphael device
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
-# Inherit some common Evolution X stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
-EVO_BUILD_TYPE := OFFICIAL
-EXTRA_UDFPS_ANIMATIONS := true
-TARGET_BOOT_ANIMATION_RES := 1080
+# Inherit some common Nusantara stuff.
+$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+
+# Nad Flags
+NAD_BUILD_TYPE := OFFICIAL
+EXTRA_FOD_ANIMATIONS := true
 TARGET_SUPPORTS_QUICK_TAP := true
+USE_GAPPS := true
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Pixel Offline Charging
+USE_PIXEL_CHARGING := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := evolution_raphael
+PRODUCT_NAME := nad_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
